@@ -1,0 +1,156 @@
+.portfolio {
+  margin: 20px 0px;
+
+  .background-img {
+    background-image: url(../img/pink-splatter-transparent.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    margin: 0 auto -80px auto;
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+
+    .title {
+      padding: 60px 0;
+      font-size: 24px;
+    }
+  }
+  .port-cards {
+    width: 100%;
+    flex-wrap: wrap;
+    .port-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+
+      .info {
+        background-color: rgba(250, 235, 215, 0.281);
+        padding: 20px;
+        margin: 10px;
+        width: 40%;
+        border-radius: 50px 15px;
+        text-align: center;
+
+        .subtitle {
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        .para {
+          padding: 5px 0;
+
+          p {
+            padding-bottom: 15px;
+          }
+
+          .button {
+            padding: 5px 20px;
+            margin-top: 15px;
+            border-radius: 50px 15px;
+            background-color: rgba(236, 164, 186, 0.295);
+            color: rgb(75, 73, 73);
+            border-color: rgba(236, 164, 186, 0.295);
+          }
+        }
+      }
+
+      .design {
+        max-width: 60%;
+        margin: 10px;
+
+        .web-bg {
+          background-color: rgb(113, 114, 114);
+          padding: 10px;
+          border-radius: 20px;
+
+          .webview {
+            width: 100%;
+            max-height: 400px;
+            overflow: hidden;
+
+            img {
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//MEDIA//
+@media only screen and (max-width: 1023px) {
+}
+
+@media only screen and (max-width: 950px) {
+}
+
+@media only screen and (max-width: 780px) {
+  .portfolio {
+    .port-cards {
+      margin-top: 20px;
+      .port-card {
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+        .info {
+          width: 70%;
+        }
+
+        .design {
+          max-width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .portfolio {
+    .port-cards {
+      .port-card {
+        .info {
+          width: 80%;
+        }
+
+        .design {
+          max-width: 90%;
+          margin: 10px;
+
+          .web-bg {
+            .webview {
+              max-height: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .portfolio {
+    .port-cards {
+      .port-card {
+        .info {
+          width: 90%;
+        }
+
+        .design {
+          max-width: 95%;
+
+          .web-bg {
+            .webview {
+              max-height: 250px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

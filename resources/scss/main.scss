@@ -1,6 +1,49 @@
-// test
+//Header
+@import "header";
+
+//Banner
+@import "banner";
+
+//About Me
+@import "aboutme";
+
+//Footer
+@import "footer";
+
+//Portfolio
+@import "portfolio";
+
+//Skills
+@import "skills";
+
+* {
+  text-decoration: none;
+  list-style: none;
+  color: #111;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   height: 100%;
-  background-color: lightcoral;
+  line-height: 1.5;
+  min-width: 300px;
+  font-weight: 500;
+}
+
+.wrapper {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.serif {
+  font-family: "Vidaloka", serif;
+}
+
+.sans {
+  font-family: "Raleway", sans-serif;
 }
