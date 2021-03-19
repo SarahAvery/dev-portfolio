@@ -143,14 +143,17 @@ header {
       .about-me .abt-me-card .card .info {
         display: flex;
         flex-wrap: wrap; }
+        .about-me .abt-me-card .card .info h1,
         .about-me .abt-me-card .card .info p {
           text-align: center;
           padding: 10px;
           margin: 0 auto;
           width: 90%; }
         .about-me .abt-me-card .card .info .title {
-          font-size: 18px;
-          font-weight: bold; }
+          font-size: 20px;
+          font-weight: bolder; }
+        .about-me .abt-me-card .card .info .para {
+          font-size: 16px; }
     .about-me .abt-me-card .one {
       background-color: rgba(236, 164, 186, 0.295);
       margin: 20px auto; }
@@ -203,7 +206,7 @@ footer {
     justify-content: center; }
     .portfolio .background-img .title {
       padding: 60px 0;
-      font-size: 24px; }
+      font-size: 26px; }
   .portfolio .port-cards {
     width: 100%;
     flex-wrap: wrap; }
@@ -220,7 +223,7 @@ footer {
         border-radius: 50px 15px;
         text-align: center; }
         .portfolio .port-cards .port-card .info .subtitle {
-          font-size: 18px;
+          font-size: 20px;
           font-weight: bold; }
         .portfolio .port-cards .port-card .info .para {
           padding: 5px 0; }
@@ -285,7 +288,8 @@ footer {
 * {
   text-decoration: none;
   list-style: none;
-  color: #111; }
+  color: #111;
+  font-weight: 500; }
 
 html {
   scroll-behavior: smooth; }
