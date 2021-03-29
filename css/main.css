@@ -227,15 +227,32 @@ footer {
           font-weight: bold; }
         .portfolio .port-cards .port-card .info .para {
           padding: 5px 0; }
-          .portfolio .port-cards .port-card .info .para p {
-            padding-bottom: 15px; }
+          .portfolio .port-cards .port-card .info .para .badges {
+            padding: 5px;
+            margin-top: 10px;
+            font-size: 14px; }
+            .portfolio .port-cards .port-card .info .para .badges ul {
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap; }
+              .portfolio .port-cards .port-card .info .para .badges ul li {
+                min-width: 60px;
+                padding: 5px 10px;
+                margin: 5px;
+                border-radius: 15px;
+                background-color: rgba(236, 164, 186, 0.295);
+                color: #979797;
+                border-color: rgba(236, 164, 186, 0.295); }
           .portfolio .port-cards .port-card .info .para .button {
-            padding: 5px 20px;
-            margin-top: 15px;
-            border-radius: 50px 15px;
-            background-color: rgba(236, 164, 186, 0.295);
-            color: #4b4949;
-            border-color: rgba(236, 164, 186, 0.295); }
+            margin: 5px 0;
+            padding: 5px 0;
+            height: auto; }
+            .portfolio .port-cards .port-card .info .para .button .see-me {
+              padding: 5px 20px;
+              border-radius: 50px 15px;
+              background-color: rgba(236, 164, 186, 0.6);
+              color: #4b4949;
+              border-color: rgba(236, 164, 186, 0.295); }
       .portfolio .port-cards .port-card .design {
         max-width: 60%;
         margin: 10px; }
