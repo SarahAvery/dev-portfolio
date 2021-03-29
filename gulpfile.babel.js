@@ -68,8 +68,10 @@ function clean(type) {
   };
 }
 
-exports.build = function () {
+exports.build = function (done) {
   console.log("production");
+  copyHtmlProduction();
+  done();
 };
 
 exports.default = function () {
