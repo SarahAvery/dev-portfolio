@@ -42,17 +42,44 @@
         .para {
           padding: 5px 0;
 
-          p {
-            padding-bottom: 15px;
+          // p {
+          //   // padding-bottom: 10px;
+          // }
+
+          .badges {
+            padding: 5px;
+            margin-top: 10px;
+            font-size: 14px;
+
+            ul {
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+              li {
+                min-width: 60px;
+                padding: 5px 10px;
+                margin: 5px;
+                border-radius: 15px;
+                background-color: rgba(236, 164, 186, 0.295);
+                color: rgb(151, 151, 151);
+                border-color: rgba(236, 164, 186, 0.295);
+              }
+            }
           }
 
           .button {
-            padding: 5px 20px;
-            margin-top: 15px;
-            border-radius: 50px 15px;
-            background-color: rgba(236, 164, 186, 0.295);
-            color: rgb(75, 73, 73);
-            border-color: rgba(236, 164, 186, 0.295);
+            margin: 5px 0;
+            padding: 5px 0;
+            // background-color: springgreen;
+            height: auto;
+
+            .see-me {
+              padding: 5px 20px;
+              border-radius: 50px 15px;
+              background-color: rgba(236, 164, 186, 0.6);
+              color: rgb(75, 73, 73);
+              border-color: rgba(236, 164, 186, 0.295);
+            }
           }
         }
       }
