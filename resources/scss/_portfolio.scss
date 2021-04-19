@@ -79,6 +79,14 @@
               background-color: rgba(236, 164, 186, 0.6);
               color: rgb(75, 73, 73);
               border-color: rgba(236, 164, 186, 0.295);
+
+              &:hover {
+                background-color: rgba(236, 164, 186, 0.8);
+                font-weight: bold;
+                // color: #eee;
+
+                transition: background-color 0.3s ease-in-out;
+              }
             }
           }
         }
