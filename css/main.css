@@ -253,6 +253,10 @@ footer {
               background-color: rgba(236, 164, 186, 0.6);
               color: #4b4949;
               border-color: rgba(236, 164, 186, 0.295); }
+              .portfolio .port-cards .port-card .info .para .button .see-me:hover {
+                background-color: rgba(236, 164, 186, 0.8);
+                font-weight: bold;
+                transition: background-color 0.3s ease-in-out; }
       .portfolio .port-cards .port-card .design {
         max-width: 60%;
         margin: 10px; }
