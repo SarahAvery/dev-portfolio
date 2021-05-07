@@ -268,6 +268,49 @@ footer {
             width: 100%;
             max-height: 400px;
             overflow: hidden; }
+            .portfolio .port-cards .port-card .design .web-bg .webview .ba-slider {
+              position: relative;
+              overflow: hidden;
+              width: 100%;
+              height: 100%; }
+            .portfolio .port-cards .port-card .design .web-bg .webview .ba-slider img {
+              height: 100%;
+              width: 100%;
+              display: block;
+              object-fit: cover; }
+            .portfolio .port-cards .port-card .design .web-bg .webview .resize {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 50%;
+              overflow: hidden; }
+            .portfolio .port-cards .port-card .design .web-bg .webview .handle {
+              position: absolute;
+              left: 50%;
+              top: 0;
+              bottom: 0;
+              width: 4px;
+              margin-left: -2px;
+              height: 400px;
+              background: #fff;
+              cursor: ew-resize; }
+            .portfolio .port-cards .port-card .design .web-bg .webview .handle:after {
+              position: absolute;
+              top: 50%;
+              width: 64px;
+              height: 64px;
+              margin: -32px 0 0 -32px;
+              content: "\21d4";
+              color: white;
+              font-weight: bold;
+              font-size: 36px;
+              text-align: center;
+              line-height: 64px;
+              background: #eca4ba;
+              border: 1px solid white;
+              border-radius: 50%;
+              transition: all 0.3s ease; }
             .portfolio .port-cards .port-card .design .web-bg .webview img {
               width: 100%;
               height: auto;
@@ -282,7 +325,13 @@ footer {
       .portfolio .port-cards .port-card .info {
         width: 70%; }
       .portfolio .port-cards .port-card .design {
-        max-width: 80%; } }
+        max-width: 80%; }
+        .portfolio .port-cards .port-card .design .web-bg .webview .handle:after {
+          width: 50px;
+          height: 50px;
+          margin: -25px 0 0 -25px;
+          font-size: 25px;
+          line-height: 50px; } }
 
 @media only screen and (max-width: 650px) {
   .portfolio .port-cards .port-card .info {
@@ -291,7 +340,15 @@ footer {
     max-width: 90%;
     margin: 10px; }
     .portfolio .port-cards .port-card .design .web-bg .webview {
-      max-height: 300px; } }
+      max-height: 300px; }
+      .portfolio .port-cards .port-card .design .web-bg .webview .handle {
+        height: 300px; }
+      .portfolio .port-cards .port-card .design .web-bg .webview .handle:after {
+        width: 40px;
+        height: 40px;
+        margin: -20px 0 0 -20px;
+        font-size: 20px;
+        line-height: 40px; } }
 
 @media only screen and (max-width: 420px) {
   .portfolio .port-cards .port-card .info {
@@ -299,7 +356,15 @@ footer {
   .portfolio .port-cards .port-card .design {
     max-width: 95%; }
     .portfolio .port-cards .port-card .design .web-bg .webview {
-      max-height: 250px; } }
+      max-height: 250px; }
+      .portfolio .port-cards .port-card .design .web-bg .webview .handle {
+        height: 250px; }
+      .portfolio .port-cards .port-card .design .web-bg .webview .handle:after {
+        width: 30px;
+        height: 30px;
+        margin: -15px 0 0px -16px;
+        font-size: 16px;
+        line-height: 30px; } }
 
 .skills {
   height: 300px;
