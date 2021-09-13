@@ -1,22 +1,12 @@
 .portfolio {
-  margin: 20px 0px;
+  padding: 40px 5%;
+  padding-top: 80px;
+  flex-wrap: wrap;
 
-  .background-img {
-    background-image: url(../img/pink-splatter-transparent.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 250px;
-    margin: 0 auto -80px auto;
-    max-width: 1300px;
-    display: flex;
-    justify-content: center;
-
-    .title {
-      padding: 60px 0;
-      font-size: 26px;
-    }
+  h1 {
+    width: 100%;
   }
+
   .port-cards {
     width: 100%;
     flex-wrap: wrap;
@@ -27,7 +17,6 @@
       margin-bottom: 40px;
 
       .info {
-        background-color: rgba(250, 235, 215, 0.281);
         padding: 20px;
         margin: 10px;
         width: 40%;
@@ -37,14 +26,12 @@
         .subtitle {
           font-size: 20px;
           font-weight: bold;
+          color: rgb(25, 187, 187);
         }
 
         .para {
           padding: 5px 0;
-
-          // p {
-          //   // padding-bottom: 10px;
-          // }
+          color: rgb(247, 247, 247);
 
           .badges {
             padding: 5px;
@@ -59,10 +46,9 @@
                 min-width: 60px;
                 padding: 5px 10px;
                 margin: 5px;
-                border-radius: 15px;
-                background-color: rgba(236, 164, 186, 0.295);
-                color: rgb(151, 151, 151);
-                border-color: rgba(236, 164, 186, 0.295);
+                border-radius: 8px;
+                border: 1px solid rgb(25, 187, 187);
+                color: rgb(247, 247, 247);
               }
             }
           }
@@ -70,21 +56,16 @@
           .button {
             margin: 5px 0;
             padding: 5px 0;
-            // background-color: springgreen;
             height: auto;
 
             .see-me {
               padding: 5px 20px;
-              border-radius: 50px 15px;
-              background-color: rgba(236, 164, 186, 0.6);
-              color: rgb(75, 73, 73);
-              border-color: rgba(236, 164, 186, 0.295);
+              border-radius: 8px;
+              background-color: rgba(25, 187, 187, 0.6);
+              color: rgb(247, 247, 247);
 
               &:hover {
-                background-color: rgba(236, 164, 186, 0.8);
-                font-weight: bold;
-                // color: #eee;
-
+                background-color: rgba(25, 187, 187, 0.8);
                 transition: background-color 0.3s ease-in-out;
               }
             }
@@ -93,12 +74,10 @@
       }
 
       .design {
-        max-width: 60%;
+        max-width: 55%;
         margin: 10px;
 
         .web-bg {
-          background-color: rgb(113, 114, 114);
-          padding: 10px;
           border-radius: 20px;
 
           .webview {
@@ -137,7 +116,7 @@
               width: 4px;
               margin-left: -2px;
               height: 400px;
-              background: #fff;
+              background: rgb(247, 247, 247);
               cursor: ew-resize;
             }
 
@@ -148,13 +127,13 @@
               height: 64px;
               margin: -32px 0 0 -32px;
               content: "\21d4";
-              color: white;
+              color: rgb(247, 247, 247);
               font-weight: bold;
               font-size: 36px;
               text-align: center;
               line-height: 64px;
-              background: rgba(236, 164, 186, 1);
-              border: 1px solid rgb(255, 255, 255);
+              background: rgba(25, 187, 187, 1);
+              border: 1px solid rgb(247, 247, 247);
               border-radius: 50%;
               transition: all 0.3s ease;
             }
@@ -163,6 +142,7 @@
               width: 100%;
               height: auto;
               object-fit: cover;
+              overflow: hidden;
             }
           }
         }

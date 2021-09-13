@@ -2,7 +2,7 @@
 @import "header";
 
 //Banner
-@import "banner";
+@import "index";
 
 //About Me
 @import "aboutme";
@@ -19,7 +19,6 @@
 * {
   text-decoration: none;
   list-style: none;
-  color: #111;
   font-weight: 500;
 }
 
@@ -29,9 +28,12 @@ html {
 
 body {
   height: 100%;
-  line-height: 1.5;
   min-width: 300px;
   font-weight: 500;
+  background-color: #000;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  color: rgb(247, 247, 247);
 }
 
 .wrapper {
@@ -41,10 +43,16 @@ body {
   justify-content: center;
 }
 
-.serif {
-  font-family: "Vidaloka", serif;
+.blue {
+  color: rgb(25, 187, 187);
 }
 
-.sans {
-  font-family: "Raleway", sans-serif;
+.title {
+  font-size: 52px;
+  font-weight: bolder;
+  line-height: 1.2;
+}
+
+.para {
+  line-height: 1.5;
 }

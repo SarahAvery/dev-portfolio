@@ -1,15 +1,15 @@
 footer {
-  //background: white;
   padding-top: 40px;
   height: auto;
-  background-color: rgba(250, 235, 215, 0.384);
+  background-color: #222;
+  color: rgb(247, 247, 247);
 
   .info {
     width: 100%;
     text-align: center;
 
     .title {
-      font-size: 18px;
+      font-size: 20px;
     }
   }
 
@@ -35,7 +35,7 @@ footer {
 
               .git,
               .em {
-                fill: rgba(236, 164, 186, 0.479);
+                fill: rgb(236, 164, 186);
               }
             }
           }

@@ -12,7 +12,6 @@
       width: 75%;
       height: auto;
       padding: 20px;
-      background-color: rgba(250, 235, 215, 0.384);
       margin: 10px;
       border-radius: 15px 50px;
 
@@ -29,16 +28,14 @@
         }
 
         .title {
-          font-size: 20px;
+          font-size: 22px;
           font-weight: bolder;
-        }
-        .para {
-          font-size: 16px;
         }
       }
     }
     .one {
-      background-color: rgba(236, 164, 186, 0.295);
+      color: rgb(247, 247, 247);
+      background-color: rgba(236, 164, 186, 0.5);
       margin: 20px auto;
     }
   }
