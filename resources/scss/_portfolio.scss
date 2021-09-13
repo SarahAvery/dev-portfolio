@@ -24,7 +24,7 @@
         text-align: center;
 
         .subtitle {
-          font-size: 20px;
+          font-size: 22px;
           font-weight: bold;
           color: rgb(25, 187, 187);
         }
@@ -46,7 +46,6 @@
                 min-width: 60px;
                 padding: 5px 10px;
                 margin: 5px;
-                border-radius: 8px;
                 border: 1px solid rgb(25, 187, 187);
                 color: rgb(247, 247, 247);
               }
@@ -58,10 +57,9 @@
             padding: 5px 0;
             height: auto;
 
-            .see-me {
+            .link {
               padding: 5px 20px;
-              border-radius: 8px;
-              background-color: rgba(25, 187, 187, 0.6);
+              border: 1px solid rgb(247, 247, 247);
               color: rgb(247, 247, 247);
 
               &:hover {

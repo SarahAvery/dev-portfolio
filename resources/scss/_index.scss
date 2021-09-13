@@ -36,6 +36,23 @@ main {
     .title {
       margin-bottom: 20px;
     }
+
+    .btn-container {
+      margin-top: 20px;
+      padding: 5px 0;
+      height: auto;
+
+      .link {
+        padding: 5px 20px;
+        border: 1px solid rgb(247, 247, 247);
+        color: rgb(247, 247, 247);
+
+        &:hover {
+          background-color: rgba(25, 187, 187, 0.8);
+          transition: background-color 0.3s ease-in-out;
+        }
+      }
+    }
   }
 
   .img-container {
