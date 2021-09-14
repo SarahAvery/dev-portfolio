@@ -3,10 +3,6 @@
   padding-top: 80px;
   flex-wrap: wrap;
 
-  h1 {
-    width: 100%;
-  }
-
   .port-cards {
     width: 100%;
     flex-wrap: wrap;
@@ -22,51 +18,40 @@
         width: 40%;
         border-radius: 50px 15px;
         text-align: center;
+      }
 
-        .subtitle {
-          font-size: 22px;
-          font-weight: bold;
-          color: rgb(25, 187, 187);
+      .badges {
+        padding: 5px;
+        margin-top: 10px;
+        font-size: 14px;
+
+        ul {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          li {
+            min-width: 60px;
+            padding: 5px 10px;
+            margin: 5px;
+            border: 1px solid rgb(25, 187, 187);
+            color: rgb(247, 247, 247);
+          }
         }
+      }
 
-        .para {
-          padding: 5px 0;
+      .button {
+        margin: 5px 0;
+        padding: 5px 0;
+        height: auto;
+
+        .link {
+          padding: 5px 20px;
+          border: 1px solid rgb(247, 247, 247);
           color: rgb(247, 247, 247);
 
-          .badges {
-            padding: 5px;
-            margin-top: 10px;
-            font-size: 14px;
-
-            ul {
-              display: flex;
-              justify-content: center;
-              flex-wrap: wrap;
-              li {
-                min-width: 60px;
-                padding: 5px 10px;
-                margin: 5px;
-                border: 1px solid rgb(25, 187, 187);
-                color: rgb(247, 247, 247);
-              }
-            }
-          }
-
-          .button {
-            margin: 5px 0;
-            padding: 5px 0;
-            height: auto;
-
-            .link {
-              padding: 5px 20px;
-              border: 1px solid rgb(247, 247, 247);
-              color: rgb(247, 247, 247);
-
-              &:hover {
-                background-color: rgba(25, 187, 187, 0.8);
-                transition: background-color 0.3s ease-in-out;
-              }
-            }
+          &:hover {
+            background-color: rgba(25, 187, 187, 0.8);
+            transition: background-color 0.3s ease-in-out;
           }
         }
       }
@@ -75,75 +60,77 @@
         max-width: 55%;
         margin: 10px;
 
-        .web-bg {
-          border-radius: 20px;
+        .webview {
+          width: 100%;
+          max-height: 400px;
+          overflow: hidden;
 
-          .webview {
-            width: 100%;
-            max-height: 400px;
+          .ba-slider {
+            position: relative;
             overflow: hidden;
+            width: 100%;
+            height: 100%;
+          }
 
-            .ba-slider {
-              position: relative;
-              overflow: hidden;
-              width: 100%;
-              height: 100%;
-            }
+          .ba-slider img {
+            height: 100%;
+            width: 100%;
+            display: block;
+            object-fit: cover;
+          }
 
-            .ba-slider img {
-              height: 100%;
-              width: 100%;
-              display: block;
-              object-fit: cover;
-            }
+          .resize {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 50%;
+            overflow: hidden;
+          }
 
-            .resize {
-              position: absolute;
-              top: 0;
-              left: 0;
-              height: 100%;
-              width: 50%;
-              overflow: hidden;
-            }
+          .handle {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            margin-left: -2px;
+            height: 400px;
+            background: rgb(247, 247, 247);
+            cursor: ew-resize;
+          }
 
-            .handle {
-              position: absolute;
-              left: 50%;
-              top: 0;
-              bottom: 0;
-              width: 4px;
-              margin-left: -2px;
-              height: 400px;
-              background: rgb(247, 247, 247);
-              cursor: ew-resize;
-            }
+          .handle:after {
+            position: absolute;
+            top: 50%;
+            width: 64px;
+            height: 64px;
+            margin: -32px 0 0 -32px;
+            content: "\21d4";
+            color: rgb(247, 247, 247);
+            font-weight: bold;
+            font-size: 36px;
+            text-align: center;
+            line-height: 64px;
+            background: rgba(25, 187, 187, 1);
+            border: 1px solid rgb(247, 247, 247);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+          }
 
-            .handle:after {
-              position: absolute;
-              top: 50%;
-              width: 64px;
-              height: 64px;
-              margin: -32px 0 0 -32px;
-              content: "\21d4";
-              color: rgb(247, 247, 247);
-              font-weight: bold;
-              font-size: 36px;
-              text-align: center;
-              line-height: 64px;
-              background: rgba(25, 187, 187, 1);
-              border: 1px solid rgb(247, 247, 247);
-              border-radius: 50%;
-              transition: all 0.3s ease;
-            }
-
-            img {
-              width: 100%;
-              height: auto;
-              object-fit: cover;
-              overflow: hidden;
-            }
+          img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            overflow: hidden;
           }
         }
+      }
+    }
+
+    .goodplants {
+      img {
+        opacity: 0.9;
       }
     }
   }

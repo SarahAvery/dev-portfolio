@@ -1,10 +1,11 @@
 main {
   width: 100%;
-  min-height: 80vh;
+  min-height: 85vh;
   color: rgb(247, 247, 247);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 2%;
 
   .links {
     width: 10%;
@@ -32,10 +33,6 @@ main {
     color: rgb(247, 247, 247);
     height: auto;
     width: 35%;
-
-    .title {
-      margin-bottom: 20px;
-    }
 
     .btn-container {
       margin-top: 20px;

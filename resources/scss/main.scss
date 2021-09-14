@@ -5,7 +5,7 @@
 @import "index";
 
 //About Me
-@import "aboutme";
+@import "about";
 
 //Footer
 @import "footer";
@@ -36,23 +36,39 @@ body {
   color: rgb(247, 247, 247);
 }
 
-.wrapper {
-  max-width: 1200px;
+main,
+.main {
+  width: 100%;
+  min-height: 85vh;
+  color: rgb(247, 247, 247);
   display: flex;
-  margin: 0 auto;
   justify-content: center;
-}
-
-.blue {
-  color: rgb(25, 187, 187);
+  align-items: center;
+  padding: 0 2%;
 }
 
 .title {
   font-size: 52px;
   font-weight: bolder;
   line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 .para {
   line-height: 1.5;
+  padding: 5px 0;
+}
+
+.subtitle {
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(25, 187, 187);
+}
+
+h1 {
+  width: 100%;
+}
+
+.blue {
+  color: rgb(25, 187, 187);
 }
