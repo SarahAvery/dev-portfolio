@@ -113,9 +113,6 @@ main {
     main .img-container {
       width: 100%; } }
 
-.about .intro {
-  width: auto; }
-
 @media only screen and (max-width: 780px) {
   .about .intro {
     padding: 60px 30px 10px 30px;
