@@ -1,0 +1,31 @@
+.contact {
+  justify-content: flex-start;
+  // padding: 0 15%;
+
+  span {
+    padding-right: 5px;
+  }
+}
+
+//MEDIA//
+@media only screen and (max-width: 1023px) {
+}
+
+@media only screen and (max-width: 950px) {
+}
+
+@media only screen and (max-width: 780px) {
+  .contact {
+    justify-content: center;
+
+    .links {
+      padding-top: 120px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 420px) {
+}

@@ -56,7 +56,10 @@ function drags(dragElement, resizeElement, container) {
           }
 
           // Translate the handle's left value to masked divs width.
-          widthValue = ((leftValue + dragWidth / 2 - containerOffset) * 100) / containerWidth + "%";
+          widthValue =
+            ((leftValue + dragWidth / 2 - containerOffset) * 100) /
+              containerWidth +
+            "%";
 
           // Set the new values for the slider and the handle.
           // Bind mouseup events to stop dragging.
