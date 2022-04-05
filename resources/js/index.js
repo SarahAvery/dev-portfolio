@@ -1,16 +1,12 @@
 (() => {
   if (window.localStorage) {
-    // If there is no item as 'reload'
-    // in localstorage then create one &
-    // reload the page
+    // create 'reload'
     if (!localStorage.getItem("reload")) {
       localStorage["reload"] = true;
       window.location.reload();
       console.log("RELOADED");
     } else {
-      // If there exists a 'reload' item
-      // then clear the 'reload' item in
-      // local storage
+      // remove 'reload'
       localStorage.removeItem("reload");
     }
   }
