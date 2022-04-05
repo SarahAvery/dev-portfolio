@@ -1,4 +1,18 @@
-// Call & init */
+(function () {
+  if (window.localStorage) {
+    // create 'reload'
+    if (!localStorage.getItem("reload")) {
+      localStorage["reload"] = true;
+      window.location.reload();
+      console.log("RELOADED");
+    } else {
+      // remove 'reload'
+      localStorage.removeItem("reload");
+    }
+  }
+})(); // Call & init */
+
+
 $(document).ready(function () {
   $(".ba-slider").each(function () {
     var cur = $(this); // Adjust the slider
