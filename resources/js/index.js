@@ -1,3 +1,21 @@
+(() => {
+  if (window.localStorage) {
+    // If there is no item as 'reload'
+    // in localstorage then create one &
+    // reload the page
+    if (!localStorage.getItem("reload")) {
+      localStorage["reload"] = true;
+      window.location.reload();
+      console.log("RELOADED");
+    } else {
+      // If there exists a 'reload' item
+      // then clear the 'reload' item in
+      // local storage
+      localStorage.removeItem("reload");
+    }
+  }
+})();
+
 // Call & init */
 $(document).ready(function () {
   $(".ba-slider").each(function () {
@@ -56,10 +74,7 @@ function drags(dragElement, resizeElement, container) {
           }
 
           // Translate the handle's left value to masked divs width.
-          widthValue =
-            ((leftValue + dragWidth / 2 - containerOffset) * 100) /
-              containerWidth +
-            "%";
+          widthValue = ((leftValue + dragWidth / 2 - containerOffset) * 100) / containerWidth + "%";
 
           // Set the new values for the slider and the handle.
           // Bind mouseup events to stop dragging.
