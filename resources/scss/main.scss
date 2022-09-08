@@ -1,3 +1,6 @@
+// Variables
+@import "variables";
+
 //Header
 @import "header";
 
@@ -33,14 +36,14 @@ body {
   background-color: #000;
   font-size: 18px;
   font-family: "Raleway", sans-serif;
-  color: rgb(247, 247, 247);
+  color: var(--white);
 }
 
 main,
 .main {
   width: 100%;
   min-height: 85vh;
-  color: rgb(247, 247, 247);
+  color: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,7 +66,7 @@ main,
 .subtitle {
   font-size: 22px;
   font-weight: bold;
-  color: rgb(25, 187, 187);
+  color: var(--blue);
 }
 
 h1 {
@@ -71,5 +74,5 @@ h1 {
 }
 
 .blue {
-  color: rgb(25, 187, 187);
+  color: var(--blue);
 }

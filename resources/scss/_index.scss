@@ -17,7 +17,7 @@ main {
           margin: 0 10px;
 
           a:hover {
-            border-bottom: 1px solid rgb(25, 187, 187);
+            border-bottom: 1px solid var(--blue);
           }
         }
       }
@@ -25,7 +25,7 @@ main {
   }
 
   .intro {
-    color: rgb(247, 247, 247);
+    color: var(--white);
     height: auto;
     width: 35%;
 
@@ -36,11 +36,11 @@ main {
 
       .link {
         padding: 5px 20px;
-        border: 1px solid rgb(247, 247, 247);
-        color: rgb(247, 247, 247);
+        border: 1px solid var(--white);
+        color: var(--white);
 
         &:hover {
-          background-color: rgba(25, 187, 187, 0.8);
+          background-color: #19bbbbcc;
           transition: background-color 0.3s ease-in-out;
         }
       }
@@ -68,7 +68,6 @@ main {
     .intro {
       padding: 60px 30px 10px 30px;
       width: 80%;
-      // padding-top: 60px;
     }
 
     .img-container {
