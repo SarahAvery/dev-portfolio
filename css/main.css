@@ -40,64 +40,61 @@ header {
         align-items: flex-end; }
         header .header .header-nav ul li {
           padding: 5px;
-          margin: 20px; }
+          margin: 20px;
+          text-align: center; }
           header .header .header-nav ul li a {
             width: 100%;
             height: 100%;
-            padding: 8px; }
+            padding: 8px;
+            text-align: center; }
           header .header .header-nav ul li a:hover {
             border-bottom: 1px solid var(--blue); }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px) {
+  header .header .header-nav ul li {
+    margin: 20px 10px; }
+  header .header .logo {
+    margin: 20px 15px; } }
+
+@media only screen and (max-width: 650px) {
   header .header {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: center; }
     header .header .logo {
+      border-right: none;
       width: auto;
-      margin: 0 auto; }
+      margin: 20px auto;
+      margin-bottom: 10px; }
     header .header .header-nav {
-      margin: 0 auto; } }
+      margin: 0 auto; }
+      header .header .header-nav ul li {
+        margin-bottom: 10px; } }
+
+@media only screen and (max-width: 500px) {
+  header .header {
+    padding: 0; } }
 
 @media only screen and (max-width: 420px) {
   header .header .logo {
-    border-right: none;
     border-bottom: 3px solid #111; }
   header .header .header-nav ul {
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    font-size: 18px;
+    justify-content: center; }
     header .header .header-nav ul li {
-      margin: 15px 5px; } }
+      margin: 15px 0px; }
+      header .header .header-nav ul li a {
+        padding: 5px; } }
+
+@media only screen and (max-width: 340px) {
+  header .header .header-nav ul li {
+    margin: 10px 0;
+    width: calc(50%); } }
 
 main {
   max-width: 1400px;
   margin: 0 auto; }
-  main .links {
-    width: 10%; }
-    main .links div {
-      width: auto;
-      height: auto;
-      transform: rotate(-90deg);
-      display: flex; }
-      main .links div ul {
-        display: flex; }
-        main .links div ul li {
-          margin: 0 10px; }
-          main .links div ul li a:hover {
-            border-bottom: 1px solid var(--blue); }
-  main .intro {
-    color: var(--white);
-    height: auto;
-    width: 35%; }
-    main .intro .btn-container {
-      margin-top: 20px;
-      padding: 5px 0;
-      height: auto; }
-      main .intro .btn-container .link {
-        padding: 5px 20px;
-        border: 1px solid var(--white);
-        color: var(--white); }
-        main .intro .btn-container .link:hover {
-          background-color: #19bbbbcc;
-          transition: background-color 0.3s ease-in-out; }
   main .img-container {
     width: 50%;
     display: flex;
@@ -115,10 +112,44 @@ main {
     main .img-container {
       width: 100%; } }
 
+.links {
+  width: 10%; }
+  .links div {
+    width: auto;
+    height: auto;
+    transform: rotate(-90deg);
+    display: flex; }
+    .links div ul {
+      display: flex; }
+      .links div ul li {
+        margin: 0 10px; }
+        .links div ul li a:hover {
+          border-bottom: 1px solid var(--blue); }
+
+.intro {
+  color: var(--white);
+  height: auto;
+  width: 35%; }
+  .intro .btn-container {
+    margin-top: 20px;
+    padding: 5px 0;
+    height: auto; }
+    .intro .btn-container .link {
+      padding: 5px 20px;
+      border: 1px solid var(--white);
+      color: var(--white); }
+      .intro .btn-container .link:hover {
+        background-color: #19bbbbcc;
+        transition: background-color 0.3s ease-in-out; }
+
 @media only screen and (max-width: 780px) {
   .about .intro {
     padding: 60px 30px 10px 30px;
     width: 80%; } }
+
+@media only screen and (max-width: 420px) {
+  .links {
+    width: 10%; } }
 
 .contact {
   justify-content: flex-start; }
@@ -134,8 +165,10 @@ main {
 .portfolio,
 .courses {
   padding: 40px 5%;
-  padding-top: 80px;
   flex-wrap: wrap; }
+  .portfolio .title,
+  .courses .title {
+    margin-left: 15px; }
   .portfolio .port-cards,
   .courses .port-cards {
     width: 100%;
@@ -177,7 +210,8 @@ main {
       .portfolio .port-cards .port-card .button-container,
       .courses .port-cards .port-card .button-container {
         display: flex;
-        justify-content: center; }
+        justify-content: center;
+        flex-wrap: wrap; }
       .portfolio .port-cards .port-card .button,
       .courses .port-cards .port-card .button {
         margin: 5px;
@@ -260,19 +294,29 @@ main {
     .courses .port-cards .goodplants img {
       opacity: 0.9; }
 
+.portfolio {
+  padding-top: 50px; }
+
 .courses {
   border-top: 1px solid var(--white); }
 
 @media only screen and (max-width: 780px) {
   .portfolio,
   .courses {
-    padding-top: 60px; }
+    padding-top: 40px; }
     .portfolio .port-cards .port-card,
     .courses .port-cards .port-card {
       flex-wrap: wrap;
       padding: 30px 0;
       margin: 0 auto;
       border-bottom: 1px solid var(--white); }
+      .portfolio .port-cards .port-card:last-child,
+      .courses .port-cards .port-card:last-child {
+        border-bottom: none;
+        padding-bottom: 0; }
+      .portfolio .port-cards .port-card:first-child,
+      .courses .port-cards .port-card:first-child {
+        padding-top: 0; }
       .portfolio .port-cards .port-card .info,
       .courses .port-cards .port-card .info {
         width: 70%;
@@ -367,7 +411,7 @@ main,
   font-size: 52px;
   font-weight: bolder;
   line-height: 1.2;
-  margin-bottom: 20px; }
+  margin-bottom: 40px; }
 
 .para {
   line-height: 1.5;
@@ -378,8 +422,57 @@ main,
   font-weight: bold;
   color: var(--blue); }
 
-h1 {
+h1,
+.title {
   width: 100%; }
 
 .blue {
   color: var(--blue); }
+
+#top {
+  width: 35px;
+  height: 35px;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99; }
+  #top a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue);
+    border-radius: 4px;
+    opacity: 0.8;
+    transition: all 200ms ease-in-out; }
+    #top a svg {
+      fill: var(--white);
+      height: 75%;
+      width: auto;
+      opacity: 0.8;
+      transition: all 200ms ease-in-out; }
+    #top a:hover {
+      opacity: 1; }
+      #top a:hover svg {
+        opacity: 1; }
+
+@media only screen and (max-width: 650px) {
+  body {
+    font-size: 16px; }
+  .title {
+    font-size: 42px; } }
+
+@media only screen and (max-width: 420px) {
+  #top {
+    width: 30px;
+    height: 30px;
+    bottom: 10px;
+    right: 10px; }
+  .title {
+    font-size: 36px; }
+  .subtitle {
+    font-size: 20px; } }
