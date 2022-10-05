@@ -1,3 +1,48 @@
+.links {
+  width: 10%;
+
+  div {
+    width: auto;
+    height: auto;
+    transform: rotate(-90deg);
+    display: flex;
+
+    ul {
+      display: flex;
+      li {
+        margin: 0 10px;
+
+        a:hover {
+          border-bottom: 1px solid var(--blue);
+        }
+      }
+    }
+  }
+}
+
+.intro {
+  color: var(--white);
+  height: auto;
+  width: 35%;
+
+  .btn-container {
+    margin-top: 20px;
+    padding: 5px 0;
+    height: auto;
+
+    .link {
+      padding: 5px 20px;
+      border: 1px solid var(--white);
+      color: var(--white);
+
+      &:hover {
+        background-color: #19bbbbcc;
+        transition: background-color 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
 //MEDIA//
 @media only screen and (max-width: 1023px) {
 }
@@ -16,4 +61,7 @@
 }
 
 @media only screen and (max-width: 420px) {
+  .links {
+    width: 10%;
+  }
 }
