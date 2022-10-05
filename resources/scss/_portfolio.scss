@@ -12,6 +12,11 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 40px;
+      flex-direction: row;
+
+      &:nth-child(2n + 2) {
+        flex-direction: row-reverse;
+      }
 
       .info {
         padding: 20px;
@@ -128,6 +133,7 @@
             height: auto;
             object-fit: cover;
             overflow: hidden;
+            border: 1px solid grey;
           }
         }
       }
