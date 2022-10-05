@@ -145,7 +145,11 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      flex-direction: row; }
+      .portfolio .port-cards .port-card:nth-child(2n + 2),
+      .courses .port-cards .port-card:nth-child(2n + 2) {
+        flex-direction: row-reverse; }
       .portfolio .port-cards .port-card .info,
       .courses .port-cards .port-card .info {
         padding: 20px;
@@ -250,7 +254,8 @@ main {
             width: 100%;
             height: auto;
             object-fit: cover;
-            overflow: hidden; }
+            overflow: hidden;
+            border: 1px solid grey; }
     .portfolio .port-cards .goodplants img,
     .courses .port-cards .goodplants img {
       opacity: 0.9; }
