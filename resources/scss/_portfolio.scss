@@ -1,8 +1,11 @@
 .portfolio,
 .courses {
   padding: 40px 5%;
-  padding-top: 80px;
   flex-wrap: wrap;
+
+  .title {
+    margin-left: 15px;
+  }
 
   .port-cards {
     width: 100%;
@@ -48,6 +51,7 @@
       .button-container {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
       }
       .button {
         margin: 5px;
@@ -147,6 +151,10 @@
   }
 }
 
+.portfolio {
+  padding-top: 50px;
+}
+
 .courses {
   border-top: 1px solid var(--white);
 }
@@ -161,13 +169,22 @@
 @media only screen and (max-width: 780px) {
   .portfolio,
   .courses {
-    padding-top: 60px;
+    padding-top: 40px;
     .port-cards {
       .port-card {
         flex-wrap: wrap;
         padding: 30px 0;
         margin: 0 auto;
         border-bottom: 1px solid var(--white);
+
+        &:last-child {
+          border-bottom: none;
+          padding-bottom: 0;
+        }
+
+        &:first-child {
+          padding-top: 0;
+        }
 
         .info {
           width: 70%;
